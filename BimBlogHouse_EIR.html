@@ -1,0 +1,827 @@
+<h1>Ty Digidol<br />Exchange Information Requirements</h1>
+<div><hr size="2" width="100%" /></div>
+<h2>Foreword</h2>
+<p>This document has been produced to function as the appointing party's exchange information requirements as specified within <a href="https://www.iso.org/standard/68080.html" target="_blank" rel="noopener">ISO 19650-2:2018, 5.2.1</a>. To satisfy the requirements of this document, it is assumed that it will be read in conjunction with the project's Information Standard and Information Production Methods and Procedures.</p>
+<p>This document has been structured using the methodology as outlined within <a href="https://www.iso.org/standard/52155.html" target="_blank" rel="noopener">PD ISO/TS 12911:2012, Annex C</a> with the inclusion of:</p>
+<ul>
+<li>Key Date;</li>
+<li>Supporting Information; and</li>
+<li>Acceptance Criteria</li>
+</ul>
+<p>so that the specified considerations within <a href="https://www.iso.org/standard/68080.html" target="_blank" rel="noopener">ISO 19650-2:2018, 5.2.1</a> can be fulfilled.</p>
+<p>In addition, the specified requirements have been further structured using the Level of Information Need concept and principles outlined within <a href="http://www.bimblog.house/">EN 17412-1:2020</a>.</p>
+<div>
+<div><hr size="2" width="100%" /></div>
+</div>
+<h2>Project Information</h2>
+<p>Following the purchase of Ty Digidol, a Victorian mid-terrace home in South Wales, a project has been commissioned to produce an asset information model.<br /> <br /> The lead appointed party shall use the following project information where relevant:</p>
+<table border="1" width="100%" cellpadding="0">
+<tbody>
+<tr>
+<td width="150">
+<p><strong>FacilityName</strong></p>
+</td>
+<td>
+<p>Ty Digidol</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>ProjectName</strong></p>
+</td>
+<td>
+<p>7001</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>SiteName</strong></p>
+</td>
+<td>
+<p>Ty Digidol property boundary</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>FacilityDescription</strong></p>
+</td>
+<td>
+<p>Victorian mid-terrace home</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>ProjectDescription</strong></p>
+</td>
+<td>
+<p>Ty Digidol asset capture</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>SiteDescription</strong></p>
+</td>
+<td>
+<p>Area within Ty Digidol property boundary</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /> The lead appointed party shall liaise with the employer's representative using the following contact details:</p>
+<table border="1" width="100%" cellpadding="0">
+<tbody>
+<tr>
+<td width="150">
+<p><strong>Email</strong></p>
+</td>
+<td>
+<p>redacted@bimblog.house</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Phone</strong></p>
+</td>
+<td>
+<p>440000000000</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>GivenName</strong></p>
+</td>
+<td>
+<p>Dan</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>FamilyName</strong></p>
+</td>
+<td>
+<p>Rossiter</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<div><hr size="2" width="100%" /></div>
+</div>
+<h2>Information Requirements</h2>
+<p>The following information requirements shall be delivered:</p>
+<h3>01: Asset Management</h3>
+<table border="1" width="100%" cellpadding="0">
+<tbody>
+<tr>
+<td width="150">
+<p><strong>Applicability</strong></p>
+</td>
+<td>
+<p>All objects</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Selection</strong></p>
+</td>
+<td>
+<p>Objects within the site boundary</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Exceptions</strong></p>
+</td>
+<td>
+<p>Objects with an IfcObjectType specified within NBIMS-US-V3, Table 101</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Key Dates</strong></p>
+</td>
+<td>
+<p>Stage 6: Handover and Close-out</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Requirements</strong></p>
+</td>
+<td>
+<p>Geometry:</p>
+<ul>
+<li>n/a</li>
+</ul>
+<p>Information:</p>
+<ul>
+<li>Object: All
+<ul>
+<li>n/a
+<ul>
+<li>Name (with the exception of contacts)</li>
+<li>CreatedBy</li>
+<li>CreatedOn</li>
+<li>Category (with the exception of components and assemblies)</li>
+<li>ExternalSystem</li>
+<li>ExternalObject</li>
+<li>ExternalIdentifier</li>
+<li>Description (with the exception of contact)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Object: Contacts (IfcPerson, IfcOrganization)
+<ul>
+<li>COBie_Contact
+<ul>
+<li>Email</li>
+<li>Company</li>
+<li>Phone</li>
+<li>Department</li>
+<li>OrganizationCode</li>
+<li>GivenName</li>
+<li>FamilyName</li>
+<li>Street</li>
+<li>PostalBox</li>
+<li>Town</li>
+<li>StateRegion</li>
+<li>Country</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Object: Facilities (IfcBuilding, IfcSite, IfcProject)
+<ul>
+<li>COBie_Facility
+<ul>
+<li>ProjectName</li>
+<li>SiteName</li>
+<li>LinearUnits</li>
+<li>AreaUnits</li>
+<li>VolumeUnits</li>
+<li>CurrencyUnit</li>
+<li>AreaMeasurement</li>
+<li>ProjectDescription</li>
+<li>SiteDescription</li>
+<li>Phase</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Object: Floors (IfcBuildingStorey)
+<ul>
+<li>COBie_Floor
+<ul>
+<li>Elevation</li>
+<li>Height</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Object: Spaces (IfcSpace)
+<ul>
+<li>COBie_Space
+<ul>
+<li>FloorName</li>
+<li>RoomTag</li>
+<li>UseableHeight</li>
+<li>GrossArea</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Object: Zones
+<ul>
+<li>COBie_Zone (IfcZone)
+<ul>
+<li>SpaceNames</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Object: Product Types (IfcTypeObject)
+<ul>
+<li>COBie_Specification
+<ul>
+<li>DurationUnit</li>
+<li>NominalLength</li>
+<li>NominalWidth</li>
+<li>NominalHeight</li>
+<li>Shape</li>
+<li>Size</li>
+<li>Colour</li>
+<li>Finish</li>
+<li>Grade</li>
+<li>Material</li>
+<li>Constituents</li>
+<li>Features</li>
+</ul>
+</li>
+<li>COBie_Warranty
+<ul>
+<li>WarrantyGuarantorParts</li>
+<li>WarrantyDurationParts</li>
+<li>WarrantyGuarantorLabor</li>
+<li>WarrantyDurationLabor</li>
+<li>WarrantyDurationUnit</li>
+<li>WarrantyDescription</li>
+</ul>
+</li>
+<li>Pset_Asset
+<ul>
+<li>AssetAccoutningType</li>
+</ul>
+</li>
+<li>Pset_ManufacturerTypeInformation
+<ul>
+<li>ModelReference</li>
+<li>ModelNumber</li>
+<li>Manufacturer</li>
+</ul>
+</li>
+<li>Pset_ServiceLife
+<ul>
+<li>ServiceLifeDuration</li>
+</ul>
+</li>
+<li>Zz_Custom
+<ul>
+<li>URL</li>
+<li>NominalDepth</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Object: Products (IfcProduct)
+<ul>
+<li>COBie_Component
+<ul>
+<li>TypeName</li>
+<li>Space</li>
+<li>InstallationDate</li>
+</ul>
+</li>
+<li>&nbsp;Pset_ManufacturerOccurrence
+<ul>
+<li>S AcquisitionDate</li>
+<li>S BarCode</li>
+<li>S SerialNumber</li>
+</ul>
+</li>
+<li>Pset_Warranty
+<ul>
+<li>WarrantyStartDate</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Object: Systems (IfcSystem)
+<ul>
+<li>COBie_System
+<ul>
+<li>ComponentNames</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Object: Assemblies (IfcAssembly)
+<ul>
+<li>COBie_Assembly
+<ul>
+<li>AssemblyType</li>
+<li>SheetName</li>
+<li>ParentName</li>
+<li>ChildNames</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Object: Windows (IfcWindow)
+<ul>
+<li>PropertySet: Zz_Custom
+<ul>
+<li>FensaCertID</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Documentation:</p>
+<ul>
+<li>COBie spreadsheet</li>
+<li>COBie QC report</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Supporting Information</strong></p>
+</td>
+<td>
+<ul>
+<li>Land Registry Information</li>
+<li>Fensa Certificates</li>
+<li>Gas and Electric safety test data</li>
+<li>Boiler warranty information</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Acceptance Criteria</strong></p>
+</td>
+<td>
+<ul>
+<li>Conforming to BS 1192-4:2014</li>
+<li>Delivered with a corresponding COBie QC report showing zero errors.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>&nbsp;02: Maintenance and Repair</h3>
+<table border="1" width="100%" cellpadding="0">
+<tbody>
+<tr>
+<td width="150">
+<p><strong>Applicability</strong></p>
+</td>
+<td>
+<p>All objects</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Selection</strong></p>
+</td>
+<td>
+<p>Objects within the site boundary</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Exceptions</strong></p>
+</td>
+<td>
+<p>Objects with an IfcObjectType specified within NBIMS-US-V3, Table 101</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Key Dates</strong></p>
+</td>
+<td>
+<p>Stage 6: Handover and Close-out</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Requirements</strong></p>
+</td>
+<td>
+<p>Geometry:</p>
+<ul>
+<li>n/a</li>
+</ul>
+<p>Information:</p>
+<ul>
+<li>Object: n/a
+<ul>
+<li>Pset_Condition
+<ul>
+<li>AssessmentDate</li>
+<li>AssessmentCondition</li>
+<li>AssessmentDescription</li>
+</ul>
+</li>
+<li>Pset_Warranty
+<ul>
+<li>WarrantyContent</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Object: Spaces (IfcSpace)
+<ul>
+<li>Pset_Space_Common
+<ul>
+<li>FloorCovering</li>
+<li>SkirtingBoard</li>
+<li>WallCovering</li>
+<li>CeilingCovering</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Documentation:</p>
+<ul>
+<li>n/a</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Supporting Information</strong></p>
+</td>
+<td>
+<ul>
+<li>Historic condition reports</li>
+<li>Boiler warranty information</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Acceptance Criteria</strong></p>
+</td>
+<td>
+<ul>
+<li>Integrated within the same COBie spreadsheet used to satisfy the Asset Management information requirement</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>03: Transfer of Risk</h3>
+<table border="1" width="100%" cellpadding="0">
+<tbody>
+<tr>
+<td width="150">
+<p><strong>Applicability</strong></p>
+</td>
+<td>
+<p>All risks</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Selection</strong></p>
+</td>
+<td>
+<p>All outstanding risks</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Exceptions</strong></p>
+</td>
+<td>
+<p>n/a</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Key Dates</strong></p>
+</td>
+<td>
+<p>Stage 6: Handover and Close-out</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Requirements</strong></p>
+</td>
+<td>
+<p>Geometry:</p>
+<ul>
+<li>n/a</li>
+</ul>
+<p>Information:</p>
+<ul>
+<li>Object: Risk
+<ul>
+<li>HS_Risk_UK
+<ul>
+<li>RiskName</li>
+<li>RiskCategory</li>
+<li>RiskDescription</li>
+<li>AssociatedProduct</li>
+<li>AssociatedActivity</li>
+<li>AssociatedLocation</li>
+<li>RiskAssessmentMethodology</li>
+<li>AgreedMitigation</li>
+<li>RiskLikelihood</li>
+<li>RiskConsequence</li>
+<li>LevelOfRisk</li>
+<li>ProposedMitigation</li>
+<li>DateUpdated</li>
+<li>DateReviewed</li>
+<li>OwnerDiscipline</li>
+<li>RiskDocumentation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Documentation:</p>
+<ul>
+<li>n/a</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Supporting Information</strong></p>
+</td>
+<td>
+<ul>
+<li>n/a</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Acceptance Criteria</strong></p>
+</td>
+<td>
+<ul>
+<li>Conforming to PAS 1192-5:2015</li>
+<li>Integrated within the same COBie spreadsheet used to satisfy the Asset Management information requirement</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>04: Analysis and Simulation</h3>
+<table border="1" width="100%" cellpadding="0">
+<tbody>
+<tr>
+<td width="150">
+<p><strong>Applicability</strong></p>
+</td>
+<td>
+<p>All objects</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Selection</strong></p>
+</td>
+<td>
+<p>Objects within the site boundary</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Exceptions</strong></p>
+</td>
+<td>
+<p>n/a</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Key Dates</strong></p>
+</td>
+<td>
+<p>Stage 6: Handover and Close-out</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Requirements</strong></p>
+</td>
+<td>
+<p>Geometry:</p>
+<ul>
+<li>n/a</li>
+</ul>
+<p>Information:</p>
+<ul>
+<li>Object: Floors (IfcBuildingStorey)
+<ul>
+<li>Pset_BuildingCommon
+<ul>
+<li>NumberOfStoreys</li>
+</ul>
+</li>
+<li>Pset_BuildingStoreyCommon
+<ul>
+<li>GrossPlannedArea</li>
+<li>MeanStorey</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Object: Doors (IfcDoor)
+<ul>
+<li>Pset_Door_Common
+<ul>
+<li>ThermalTransmittance</li>
+</ul>
+</li>
+<li>ZZ_Custom
+<ul>
+<li>HasDraftProofing</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Object: Windows (IfcWindos)
+<ul>
+<li>Pset_Window_Common
+<ul>
+<li>ThermalTransmittance</li>
+</ul>
+</li>
+<li>ZZ_Custom
+<ul>
+<li>HasDraftProofing</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Documentation:</p>
+<ul>
+<li>n/a</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Supporting Information</strong></p>
+</td>
+<td>
+<ul>
+<li>Energy performance certificate (EPC)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Acceptance Criteria</strong></p>
+</td>
+<td>
+<ul>
+<li>Integrated within the same COBie spreadsheet used to satisfy the Asset Management information requirement</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>05: Record Keeping</h3>
+<table border="1" width="100%" cellpadding="0">
+<tbody>
+<tr>
+<td width="150">
+<p><strong>Applicability</strong></p>
+</td>
+<td>
+<p>All files</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Selection</strong></p>
+</td>
+<td>
+<p>All files with the construction record status</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Exceptions</strong></p>
+</td>
+<td>
+<p>n/a</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Key Dates</strong></p>
+</td>
+<td>
+<p>Stage 6: Handover and Close-out</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Requirements</strong></p>
+</td>
+<td>
+<p>Geometry:</p>
+<ul>
+<li>n/a</li>
+</ul>
+<p>Information:</p>
+<ul>
+<li>Object: Documents
+<ul>
+<li>COBie_Document
+<ul>
+<li>Name</li>
+<li>CreatedBy</li>
+<li>CreatedOn</li>
+<li>Category</li>
+<li>ApprovalBy</li>
+<li>Stage</li>
+<li>SheetName</li>
+<li>RowName</li>
+<li>Directory</li>
+<li>FileDescription</li>
+<li>ExternalSystem</li>
+<li>ExternalObject</li>
+<li>ExternalIdentifier</li>
+<li>Description</li>
+<li>Reference</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Documentation:</p>
+<ul>
+<li>n/a</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Supporting Information</strong></p>
+</td>
+<td>
+<ul>
+<li>n/a</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p><strong>Acceptance Criteria</strong></p>
+</td>
+<td>
+<ul>
+<li>Listed within the COBie spreadsheet</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div><hr size="2" width="100%" /></div>
