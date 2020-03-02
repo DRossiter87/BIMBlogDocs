@@ -175,7 +175,7 @@
 <ul>
 <li>Object: Contacts (IfcPerson, IfcOrganization)
 <ul>
-<li>COBie_Contact
+<li>n/a
 <ul>
 <li>Email</li>
 <li>Company</li>
@@ -197,7 +197,7 @@
 <ul>
 <li>Object: Facilities (IfcBuilding, IfcSite, IfcProject)
 <ul>
-<li>COBie_Facility
+<li>n/a
 <ul>
 <li>ProjectName</li>
 <li>SiteName</li>
@@ -217,7 +217,7 @@
 <ul>
 <li>Object: Floors (IfcBuildingStorey)
 <ul>
-<li>COBie_Floor
+<li>n/a
 <ul>
 <li>Elevation</li>
 <li>Height</li>
@@ -229,12 +229,16 @@
 <ul>
 <li>Object: Spaces (IfcSpace)
 <ul>
-<li>COBie_Space
+<li>n/a
 <ul>
 <li>FloorName</li>
-<li>RoomTag</li>
 <li>UseableHeight</li>
 <li>GrossArea</li>
+</ul>
+</li>
+<li>&nbsp;COBie_Space
+<ul>
+<li>RoomTag</li>
 </ul>
 </li>
 </ul>
@@ -243,7 +247,7 @@
 <ul>
 <li>Object: Zones
 <ul>
-<li>COBie_Zone (IfcZone)
+<li>n/a
 <ul>
 <li>SpaceNames</li>
 </ul>
@@ -254,9 +258,13 @@
 <ul>
 <li>Object: Product Types (IfcTypeObject)
 <ul>
-<li>COBie_Specification
+<li>n/a
 <ul>
 <li>DurationUnit</li>
+</ul>
+</li>
+<li>&nbsp;COBie_Specification
+<ul>
 <li>NominalLength</li>
 <li>NominalWidth</li>
 <li>NominalHeight</li>
@@ -280,9 +288,9 @@
 <li>WarrantyDescription</li>
 </ul>
 </li>
-<li>Pset_Asset
+<li>CObie_Asset
 <ul>
-<li>AssetAccoutningType</li>
+<li>AssetType</li>
 </ul>
 </li>
 <li>Pset_ManufacturerTypeInformation
@@ -292,9 +300,9 @@
 <li>Manufacturer</li>
 </ul>
 </li>
-<li>Pset_ServiceLife
+<li>COBie_ServiceLife
 <ul>
-<li>ServiceLifeDuration</li>
+<li>ExpectedLifeDuration</li>
 </ul>
 </li>
 <li>Zz_Custom
@@ -307,23 +315,23 @@
 </li>
 <li>Object: Products (IfcProduct)
 <ul>
-<li>COBie_Component
+<li>n/a
 <ul>
 <li>TypeName</li>
 <li>Space</li>
+</ul>
+</li>
+<li>COBie_Component
+<ul>
 <li>InstallationDate</li>
+<li>WarrantyStartDate</li>
 </ul>
 </li>
 <li>&nbsp;Pset_ManufacturerOccurrence
 <ul>
-<li>S AcquisitionDate</li>
-<li>S BarCode</li>
-<li>S SerialNumber</li>
-</ul>
-</li>
-<li>Pset_Warranty
-<ul>
-<li>WarrantyStartDate</li>
+<li>AcquisitionDate</li>
+<li>BarCode</li>
+<li>SerialNumber</li>
 </ul>
 </li>
 </ul>
@@ -332,7 +340,7 @@
 <ul>
 <li>Object: Systems (IfcSystem)
 <ul>
-<li>COBie_System
+<li>n/a
 <ul>
 <li>ComponentNames</li>
 </ul>
@@ -343,7 +351,7 @@
 <ul>
 <li>Object: Assemblies (IfcAssembly)
 <ul>
-<li>COBie_Assembly
+<li>n/a
 <ul>
 <li>AssemblyType</li>
 <li>SheetName</li>
@@ -357,7 +365,7 @@
 <ul>
 <li>Object: Windows (IfcWindow)
 <ul>
-<li>PropertySet: Zz_Custom
+<li>Zz_Custom
 <ul>
 <li>FensaCertID</li>
 </ul>
@@ -774,7 +782,7 @@
 <ul>
 <li>Object: Documents
 <ul>
-<li>COBie_Document
+<li>n/a<br />
 <ul>
 <li>Name</li>
 <li>CreatedBy</li>
